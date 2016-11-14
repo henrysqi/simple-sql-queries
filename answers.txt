@@ -1,0 +1,51 @@
+1. 
+SELECT avg(Milliseconds)
+FROM Track
+
+2.
+SELECT count(*)
+FROM Invoice
+WHERE BillingCountry = "USA"
+
+3. 
+SELECT FirstName 
+FROM Customer
+WHERE FirstName LIKE "%a%"
+
+4.
+SELECT * 
+FROM Track
+ORDER BY Milliseconds
+LIMIT 10
+
+5.
+SELECT * 
+FROM Track
+ORDER BY Milliseconds desc
+LIMIT 20
+
+6.
+SELECT * 
+FROM Customer
+WHERE State = "CA" OR State = "WI"
+
+7. 
+SELECT * 
+FROM Customer
+WHERE State in ("CA", "WI", "UT", "FL", "AZ")
+
+8. 
+INSERT INTO Artist
+(ArtistId, Name)
+VALUES (0, "Henry")
+
+9. 
+INSERT INTO Customer
+VALUES (0, "Henry", "Qi", "DevMtn", "Some Address", "Provo", "UT", "CA", 12345, 415-123-1231, null, "email@email.com", 3)
+
+10.
+SELECT * 
+FROM Playlist
+WHERE Name LIKE "Classical%"
+
+11.
